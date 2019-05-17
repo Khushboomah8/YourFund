@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>YourFund</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126732353-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+s
+    gtag('config', 'UA-126732353-1');
+  </script>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0,target-densityDpi=device-dpi">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+  }
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    
+   
+    }
+ img{
+opacity:0.1;
+size:cover;
+}
+
+
+    h2 {
+      font-size: 34px;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+h6 {
+      font-size: 76px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+  h4 {
+      font-size: 29px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    width: 100%;
+    height: 970px;
+    color: #fff;
+    background-size: 400% 400%;
+    background: transparent!important;
+    position: absolute;
+    top: 0px;
+    margin-top: 200px;
+    pointer-events: none
+
+
+}
+
+  .jumbotron h5 {
+    font-size: 72px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20%;
+    font-weight: 700;
+  }
+
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+
+  .btn {
+    color: #fff;
+    background-color: #5cb85c00;
+    border-color: #ffffff80;
+    display: inline-block;
+    padding: 20px 100px;
+    margin-bottom: 0;
+    border-radius: 0 !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    position: absolute;
+    top: 85%;
+    margin: auto;
+    left: 42%;
+    display: inline-block;
+}
+.btn:hover {
+      color: #000!important;
+      border: none !important;
+      border-radius: 0;
+      animation: 1s ease;
+      padding: 25px 110px;
+      background-color: #ffffff !important;
+
+}
+
+  .logo {
+    height: 300px;
+    width: auto;
+    margin-top: 5%;
+  }
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #181818;
+  }
+
+  .carousel-indicators li {
+      border-color: #181818;
+  }
+
+  .carousel-indicators li.active {
+      background-color: #181818;
+  }
+
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+
+  .item span {
+      font-style: normal;
+  }
+
+  .panel {
+      border: 1px solid #181818;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
+  .panel-footer .btn:hover {
+      color: #fff;
+      background-color: #000 !important;
+
+  }
+
+  .panel-heading {
+      color: #fff !important;
+      background-color: #181818 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+
+
+.gre {
+    color: green;
+    float: right;
+}
+.gre1 {
+    float: right;
+}
+
+
+  .panel-footer {
+      background-color: white !important;
+  }
+
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #181818;
+      color: #fff;
+  }
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #000000bf;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #181818 !important;
+      background-color: #fff !important;
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #181818;
+  }
+
+  .slideanim {
+    visibility:hidden;
+  }
+
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+  #particles-js {
+    background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d);
+        background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    min-height: 970px;
+  }
+  @-webkit-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  @-moz-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  @keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  @media screen and (max-width: 268px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+
+
+    .logo {
+        font-size: 150px;
+    }
+}
+@media only screen and (max-width: 600px) {
+ html, body{
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+   }
+    #particles-js {
+      display: none;
+      }
+      .logo {
+          height: 200px;
+          width: auto;
+          margin-top: 10%;
+        }
+        h2, h3, h4, h5 {
+          font-size: 20px;
+        }
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
+.block1 {
+  margin-top: 0.1em;
+  width: 200px;
+  font-size: 20px;
+  background-color: #eef;
+  float: right;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.block2 {
+  margin-top: 0.3em;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eef;
+  border-radius: 6px;
+  padding: 10px;
+  float:left;
+}
+
+.block3 {
+  margin-top:3.9em;
+  width: 200px;
+  font-size: 20px;
+  background-color: #eef;
+  float: right;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+
+
+
+   .btn {
+
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    left:0;
+   }
+    .jumbotron {
+      background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d) !important;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 15s ease infinite;
+      animation: Gradient 15s ease infinite;
+      position: relative;
+      height: 800px;
+
+
+    }
+}
+  </style>
+</head>
+
+<img><body id="myPage" data-spy="scroll" data-target=".navbar" ></img>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">VALIDATE</a></li>
+          <!--<li><a href="#FAQs">FAQs</a></li>-->
+          <li><a href="#SPONSORS">ADD</a></li>
+          <li><a href="#ORGANIZERS">REQUEST</a></li>
+          <li><a href="#contact">REPAY</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="particles-js"></div>
+
+  <div class="jumbotron text-center">
+
+    <!--<img src="assets/images/logo.png" class="logo" />-->
+    <br>
+    <p>
+<br>
+      <h6>YourFund</h6><br>
+    </p>
+    <p>
+      <h3>Self Help Groups - We're your saviors!</h3>
+    </p>
+    <br>
+    <p>
+      <h3>Micro - loans at zero interest rates</h3>
+
+</div>
+  
+  <!--<center><a href="https://www.hackerearth.com/" style="text-decoration: none; color: inherit">
+      <button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>-->
+
+  
+    
+  <div id="SPONSORS" class="container-fluid bg-grey">
+    <div class="text-center">
+      <h2 style="font-size: 50  px">ADD</h2>
+
+ <div class="block1">
+          <h4>  Enter Adhar Id </h4>
+          <span><input type='text' id='Uaadh' value=''></span><br><br>
+          <span><button id ='addInit' onclick='AddInit()'>Add Initial Member</button></span>
+          
+    </div>
+   
+
+    </div>
+  </div>
+
+  <!-- Container (ORGANIZERS Section) -->
+  <div id="ORGANIZERS" class="container-fluid text-center bg-grey ">
+    <h2>Validate Members</h2>
+    <h4>Enter Aadhar Id:
+    </h4>
+    <div class="block2">
+          
+          <span><center> <input type='text' id='Uaadh' value=''></center></span>
+<h4><center>User Address:</center></h4>
+          <span><center><input type='text' id='Uaddr' value='0x00'></center></span><br>
+          <span><center><button id ='adval' onclick='aadhvalidation()'>Validate Member</button></center></span><br>
+    </div>  
+  
+</div>
+<div class="container-fluid text-center bg-grey">
+    <h2>Deposit to pool</h2>
+     <div class="block3">
+          <h4><center>Deposition Amount :</center></h4>
+          <span><center> <input type='text' id='poolDep' value=''></center></span><br>
+          <span><center><button id ='depol' onclick='PolDep()'>Deposit</button></center></span><br>
+    </div>
+    </div>
+
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">Request loan</h2>
+      <div class="block2">
+          <h4><center>Amount Requested :</center></h4>
+          <span><center> <input type='text' id='AmtReq' value=''></center></span><br>
+          <span><center><button id ='lonreq' onclick='LoanReq()'>Request Loan</button></center></span>
+    </div> 
+          
+      </div>
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+
+    </div>
+
+ <span class='gre1'>
+        Connection Status :</span><br>
+     <span class='gre' id='constat'></span>
+    
+</div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/aadhar.js"></script>
+
+    
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $(window).scroll(function () {
+          $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+    </script>
+
+</body>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+
+</html>
+
